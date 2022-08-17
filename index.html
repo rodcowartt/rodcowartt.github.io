@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <header>Test page header</header>
-  <body>
-    <h1>It`s me (or shoud i say my avatar?)</h1>
-    <img src="img/1.png" alt="Dog coslpaying Guts from Berserk" />
-    <p>
-      Hello! It`s my first web page. Uhmm... It`s not first actually... I made a
-      couple of these few years ago.
-    </p>
-    <p>
-      So now i training my skill, trying to improve myself in order to become a
-      better person.
-    </p>
-    <p>
-      I will continue this training till i become the
-      <strong>VERY</strong> best!
-    </p>
 
-    <p>The things i planned to learn:</p>
-    <form>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-    </form>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>My test page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<header>Test page header</header>
 
-    <p>And it`s already in order that i will be studying!</p>
+<body>
+  <h1>It`s me (or shoud i say my avatar?)</h1>
+  <img src="img/1.png" alt="Dog coslpaying Guts from Berserk" />
+  <p>
+    Hello! It`s my first web page. Uhmm... It`s not first actually... I made a
+    couple of these few years ago.
+  </p>
+  <p>
+    So now i training my skill, trying to improve myself in order to become a
+    better person.
+  </p>
+  <p>
+    I will continue this training till i become the
+    <strong>VERY</strong> best!
+  </p>
 
-    <form>
+  <p>The things i planned to learn:</p>
+  <form>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </form>
+
+  <p>And it`s already in order that i will be studying!</p>
+  <div>
+    <form class="fb-form">
       <h2>Feedback form:</h2>
       <p>
-        <label for="fb_email">Email </label>
-        <input id="fb_email" />
+        <label for="fb_email" id="fb-email" name="fb-email">Email </label>
+        <input id="fb_email" maxlength="50"/>
       </p>
       <p>
         <label for="fb_message">Message </label>
-        <textarea id="fb_message" name="fb_message" wrap="soft"  rows="4" cols="50"  maxlength="500"></textarea>
+        <textarea id="fb_message" name="fb_message" wrap="soft" rows="4" cols="53" maxlength="500"></textarea>
+        <button class="sbmt-btn">Submit</button>
       </p>
-    </form>
-  </body>
-  <footer>Test page footer
     
-    <a href="https://github.com/rodcowartt" target="_blank">My GitHub page</a>
-    <!-- target="_blank" atribute that allows to open a link in the new tab-->
+    </form>
+  </div>
+  <div>
+    <form>
+      <label for="select">Select 1 (one) option:</label>
+      <select id="number" name="number">
+        <option value="1">1</option>
+        <option value="one">one</option>
+      </select>
+      <button class="opt-btn">Submit</button>
+    </form>
+  </div>
+</body>
+<footer>
+  <p>Test page footer</p>
+  <p><a href="https://github.com/rodcowartt" target="_blank">My GitHub page</a></p>
+  <!-- target="_blank" atribute that allows to open a link in the new tab-->
 
-  </footer>
+</footer>
+
 </html>
